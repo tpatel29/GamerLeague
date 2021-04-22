@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cardLayout.css">
+  <title>GamerLeague</title>
+</head>
+<body>
+<nav class="navbar navbar-light light-blue lighten-4" id="slick">
+
+  <a href="adventure.html" class="navbar-brand">
+    <img src="images/logo1.png" width="60" alt="" class="d-inline-block align-middle mr-2 logo">
+  </a>
+
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="dark-blue-text">
+      <svg viewBox="0 0 100 80" width="30" height="30">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse sizer" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"><a class="nav-link sizer" href="index.html"><p class="color">Home</p></a></li>
+
+      <li class="nav-item"><a class="nav-link sizer" href="collections.html"><p class="color">Collections</p></a></li>
+      <li class="nav-item "><a  class="nav-link" href="adventure.html"><p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adventure Games</p></a></li>
+      <li class="nav-item"><a  class="nav-link" href="shooting.html"><p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shooting Games</p></a></li>
+      <li class="nav-item"><a  class="nav-link" href="puzzle.html"><p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puzzle Games</p></a></li>
+      <li class="nav-item active"><a class="nav-link sizer" href="contact.html"><p class="color">Contact Us</p></a></li>
+      <li class="nav-item active"><a class="nav-link sizer" href="cart.html"><p class="color">Cart</p></a></li>
+      <li class="nav-item active"><a class="nav-link sizer" href="signup.html"><p class="color">Sign Up</p></a></li>
+      <li class="nav-item active"><a class="nav-link sizer" href="login.html"><p class="color">Login</p></a></li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="regNav">
+  <a href="index.html" class="navbar-brand">
+    <img src="images/logo1.png" width="50" alt="" class="d-inline-block align-middle mr-2 logo">
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item tabs">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+
+      <li class="nav-item dropdown tabs">
+        <a class="nav-link dropdown-toggle" href="collections.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Collections
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="collections.html">All Games</a>
+          <a class="dropdown-item" href="adventure.html">Adventure Games</a>
+          <a class="dropdown-item" href="shooting.html">Shooting Games</a>
+          <a class="dropdown-item" href="puzzle.html">Puzzle Games</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item tabs">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <div class="input-group">
+          <div class="form-outline">
+            <input id="search-input" type="search" id="form1" class="form-control" />
+          </div>
+          <button id="search-button" type="button" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <a class="btn btn-primary borderOutline" href="cart.html" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>Cart</a>
+    <a class="btn btn-success borderOutline" href="login.html" id="login" role="button">Login</a>
+    <a class="btn btn-danger borderOutline" href="signup.html" id="signin" role="button">Sign Up</a>
+  </div>
+</nav>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/halo5.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HALO: MASTER CHEIF COLLECTION</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/callofdutybo4.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CALL OF DUTY: BLACK OPS 4</h5>
+      <p class="card-text">$39.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/overwatch.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">OVERWATCH</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/fps/battlefield5.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BATTLEFIELD V</h5>
+      <p class="card-text">$34.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/fps/csgo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">COUNTER STRIKE-GLOBAL OFFENSIVE</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/valorant.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">VALORANT</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/warzone.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CALL OF DUTY: MORDERN WARFARE</h5>
+      <p class="card-text">$39.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/apex.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">APEX LEGENDS</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/destiny2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">DESTINY 2</h5>
+      <p class="card-text">$39.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/fps/halo4.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HALO 4</h5>
+      <p class="card-text">$14.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/teamfortress2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">TEAM FORTRESS 2</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/superhot.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">SUPERHOT</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/fortnite.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FORTNITE</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/coldwar.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CALL OF DUTY: : BLACK OPS COLD WAR</h5>
+      <p class="card-text">$59.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/fps/titanfall2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">TITALFALL 2</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123  container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/doometernal.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">DOOM ETERNAL</h5>
+      <p class="card-text">$20.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/halflife2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HALF-LIFE 2</h5>
+      <p class="card-text">$10.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/seigesix.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">TOM CLANCY'S RAINBOW SIX SIEGE</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/fps/bulletstorm.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BULLETSTORM</h5>
+      <p class="card-text">$15.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/fps/pubg.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">PLAYERUNKNOWN'S BATTLEGROUNDS</h5>
+      <p class="card-text">$30.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/wizard101.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">WIZARD101</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/tombraider.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">TOMBRAIDER</h5>
+      <p class="card-text">$19.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/witcher3.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE WITCHER 3: WILD HUNT</h5>
+      <p class="card-text">$39.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/adventure/farcry4.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FAR CRY 4</h5>
+      <p class="card-text">$25.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/adventure/asscreed.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ASSASSIN'S CREED: VALHALLA</h5>
+      <p class="card-text">$59.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/lastofus.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE LAST OF US REMASTERED</h5>
+      <p class="card-text">$19.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/uncharted4.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">UNCHARTED 4: A THIEF'S END</h5>
+      <p class="card-text">$25.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/godofwar.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">GOD OF WAR</h5>
+      <p class="card-text">$49.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/adventure/spiderman.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">MARVEL SPIDER-MAN MILES MORAL</h5>
+      <p class="card-text">$59.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/adventure/reddeadredem2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">RED DEAD REDEMPTION 2</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/starwars.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">STAR WARS JEDI: FALLEN ORDER</h5>
+      <p class="card-text">$49.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/untildawn.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">UNTIL DAWN</h5>
+      <p class="card-text">$14.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/minecraft.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">MINECRAFT</h5>
+      <p class="card-text">$19.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/adventure/gta5.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">GRAND THEFT AUTO V</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/adventure/batmanac.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BATMAN ARKHAM CITY</h5>
+      <p class="card-text">$34.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/limbo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">LIMBO</h5>
+      <p class="card-text">$49.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/inside.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">INSIDE</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/qube2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Q.U.B.E. 2</h5>
+      <p class="card-text">$15.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/puzzle/portal.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">PORTAL</h5>
+      <p class="card-text">$40.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/puzzle/rime.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">RIME</h5>
+      <p class="card-text">$39.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/peggle.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">PEGGLE</h5>
+      <p class="card-text">FREE</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/tetris.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">TETRIS ULTIMATE</h5>
+      <p class="card-text">$19.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/hexic.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HEXIC</h5>
+      <p class="card-text">$10.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/puzzle/portal2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">PORTAL 2</h5>
+      <p class="card-text">$40.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/puzzle/witness.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE WITNESS</h5>
+      <p class="card-text">$59.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/unravel2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">UNRAVEL 2</h5>
+      <p class="card-text">$34.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/callofthesea.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CALL OF THE SEA</h5>
+      <p class="card-text">$18.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/braid.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BRAID</h5>
+      <p class="card-text">$40.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/puzzle/talos.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE TALOS PRINCIPLE</h5>
+      <p class="card-text">$15.00</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/puzzle/humanfallflat.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HUMAN FALL FLAT</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/valheart.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">VALIANT HEAR: THE GREAT WAR</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/brothers.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BROTHERS: A TALE OF TWO SONS</h5>
+      <p class="card-text">$13.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/puzzle/fez.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">FEZ</h5>
+      <p class="card-text">$49.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/puzzle/carto.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CARTO</h5>
+      <p class="card-text">$25.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/puzzle/gardensbetween.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE GARDENS BETWEEN</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cards123 container-fluid finalset">
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/ori.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ORI AND THE BLIND FOREST</h5>
+      <p class="card-text">$35.89</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/watchdog2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">WATCHDOG 2</h5>
+      <p class="card-text">$24.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor">
+    <img class="card-img-top" src="images/adventure/seaofthieves.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">SEA OF THIEVES</h5>
+      <p class="card-text">$34.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor" >
+    <img class="card-img-top" src="images/adventure/ark.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ARK SURVIVAL EVOLVED</h5>
+      <p class="card-text">$29.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+  <div class="card spacing cardcolor ">
+    <img class="card-img-top" src="images/adventure/wolfamongus.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">THE WOLF AMONG US</h5>
+      <p class="card-text">$14.99</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input style="width:40%" type="number" value="0"><button style="font-size: 70%" class="btn btn-primary" type="submit">Add To Cart</button></li>
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+</body>
+<footer class="footer page-footer font-small ">
+  <div class="container">
+    <div class="row">
+      <span class="text-muted">&copy; Tejkumar Patel, 2021 |  Terms Of Use  |  Privacy Statement</span>
+    </div>
+  </div>
+</footer>
+</html>

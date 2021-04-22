@@ -1,0 +1,140 @@
+.fa-1x {
+    font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.dark-blue-text {
+    color: #0A38F5;
+}
+.dark-pink-text {
+    color: #AC003A;
+}
+.dark-amber-text {
+    color: #ff6f00;
+}
+.dark-teal-text {
+    color: #004d40;
+}
+*{
+    margin:0;
+    padding:0;
+}
+#login{
+    margin: 0 1em;
+}
+.borderOutline{
+    border: black 2px solid;
+}
+.logo{
+    margin: 0 2em;
+}
+.tabs{
+    margin: 0 1em;
+}
+aside{
+    box-sizing: border-box;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.backgroundPic{
+    background-image: url('../images/wp.jpeg');
+}
+#jumbo{
+    color: indianred;
+    text-align: center;
+}
+#jumbo h1{
+    color: white;
+    font-size: 600%;
+    font-weight: bold;
+    text-shadow: #2196F3 3px 3px;
+}
+#jumbo p{
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    text-shadow: #2196F3 3px 3px;
+}
+.form1{
+    padding: 20px;
+    margin:20px;
+    background-color: gray;
+}
+.borderTopBot{
+    border-bottom: black 2px solid;
+}
+#slick{
+    display:none;
+    white-space: nowrap;
+}
+#regNav{
+    white-space: nowrap;
+}
+.cards123 {
+    display: flex;
+    float: left;
+    margin-top: 2%;
+    justify-content: space-around;
+
+}
+.margin1{
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+.spacing{
+    width: 17%;
+
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    margin: 4px;
+}
+.finalset{
+    margin-bottom: 2%;
+}
+.text{
+    color: white;
+}
+.color{
+    color: #2196F3;
+}
+.acc {
+    color:white;
+}
+
+@media only screen and (max-width: 1017px){
+    #slick{
+        display: flex;
+        background-color: #313a40;
+        font-size: 100%;
+    }
+    .nav-link{
+        height: 40px;
+    }
+    #regNav{
+        display: none;
+    }
+}
+
+
+
